@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Infinite Loop contact</title>
+  <meta name="title" content="We are Infinite, learn why." />
+  <meta name="description" content="++" />
+
+
+  <link rel="shortcut icon" id="favicon" href="favicon.png"> 
+  <link rel="stylesheet" href="css/lightbox.css">
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+  <script type="text/javascript" src="http://code.jquery.com/jquery-1.9.1.js"></script>
+  <script type="text/javascript" src="js/jquery.onepage-scroll.js"></script>
+  
+  <link href='css/onepage-scroll.css' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="css/style.css" type="text/css">
+  <meta name="viewport" content="initial-scale=1, width=device-width, maximum-scale=1, minimum-scale=1, user-scalable=no">
+  <link rel="stylesheet" href="css/style1.css" type="text/css">
+  <link rel="stylesheet" href="css/style2.css">
+  <!-- <link rel="stylesheet" href="css/style3.css"> -->
+  <script>
+   $(document).ready(function(){
+    $(".main").onepage_scroll({
+      sectionContainer: "section",
+      responsiveFallback: 600,
+      loop: true
+    });
+  });
+
+</script>
+
+</head>
+<body>
+  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+   <div class="col-4">
+    <div  id="nav-header" class="logo-header-nav">
+      <span>INFINITE <p>LOOP</p></span>
+      <img src="img/logo-front.svg" alt="">
+    </div>
+  </div>
+
+  <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="index.html">HOME </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">ABOUT US</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">SERVICES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">TECHNOLOGIES</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">OUR TEAM</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">CONTACT<span class="sr-only">(current)</span></a>
+      </li>
+    </ul>
+
+  </div>
+</nav>
+<nav class="navbar navbar1 navbar-expand-md navbar-dark fixed-top bg-dark">
+
+</nav>
+<div class="wrapper">
+ <div class="main">
+
+  <section class="page1">
+    <div class="page_container">
+
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="logo-header">
+              <span>INFINITE <p>LOOP</p></span>
+              <img src="img/logo-front.svg" alt="">
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row">
+         <div class="container">
+    <form id="contact" action="" method="post">
+      <h3>Contact us</h3>
+
+      <!-- First name -->
+
+      <fieldset>
+        <input placeholder="First name" id="patientName" type="text" tabindex="1" required autofocus step="1">
+        <p id="firstNameRequied"></p>
+      </fieldset>
+
+      <!-- Last name -->
+
+      <fieldset>
+        <input placeholder="Last name" id="lastName" type="text" tabindex="1" required autofocus>
+        <p id="lastNameRequied"></p>
+      </fieldset>
+
+     
+
+      <!-- Email: -->
+
+      <fieldset>
+        <input placeholder="Email Address" id="email" type="email" tabindex="2" required>
+        <p id="emailCheck"></p>
+      </fieldset>
+
+      <!-- Message: -->
+
+      <fieldset>
+        <textarea placeholder="Type Message Here...." tabindex="5"></textarea>
+      </fieldset>
+
+      <!-- Submit -->
+
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+      </fieldset>
+    </form>
+  </div>
+
+        </div>
+      </div>
+
+    </section>
+
+
+
+
+</div>
+
+</div>
+
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+
+ 
+  <script src="form1.js" charset="utf-8">
+  	var form = document.getElementById('contact');
+
+
+form.addEventListener('submit', validateForm);
+
+function validateForm(event) {
+  event.preventDefault();
+  var isValid = true;
+  var patientNameValue = document.getElementById('patientName').value;
+  var patientLastNameValue = document.getElementById('lastName').value;
+ 
+  var emailValue = document.getElementById('email').value;
+
+
+  //      //// First Name Validation ////
+
+  if (patientNameValue === 0) {
+    isValid = false;
+    document.getElementById('firstNameRequied').innerHTML = "Please enter a valid firstlast name * ";
+  }
+  if (patientNameValue.indexOf(" ") !== -1) {
+    isValid = false;
+    document.getElementById('firstNameRequied').innerHTML = "Please enter a valid firstlast name * ";
+  }
+  if (!isNaN(patientNameValue)) {
+    isValid = false;
+    document.getElementById('firstNameRequied').innerHTML = "Please enter a valid firstlast name * ";
+  }
+
+
+  //    //// Last Name Validation ////
+
+  if (patientLastNameValue  === 0) {
+    isValid = false;
+    document.getElementById('lastNameRequied').innerHTML = "Please enter a valid last name * ";
+  }
+  if (patientLastNameValue.indexOf(" ") !== -1) {
+    isValid = false;
+    document.getElementById('lastNameRequied').innerHTML = "Please enter a valid last name * ";
+  }
+  if (!isNaN(patientLastNameValue)) {
+    isValid = false;
+    document.getElementById('lastNameRequied').innerHTML = "Please enter a valid last name * ";
+  }
+
+  
+
+  
+  
+
+
+
+  
+  //        //// Email ////
+
+  
+  if (emailValue.indexOf('@') === -1 || emailValue.indexOf('.') === -1 ) {
+    document.getElementById('emailCheck').innerHTML = "Please enter a valid Email * ";
+    isValid = false;
+
+  }
+  if (emailValue.length <5 ) {
+    document.getElementById('emailCheck').innerHTML = "Please enter a valid Email * ";
+    isValid = false;
+
+  }
+
+
+
+}
+  </script>
+</body>
+</html>

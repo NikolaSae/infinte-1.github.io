@@ -1,0 +1,534 @@
+html {
+  height: 100%;
+}
+body {
+  background: #E2E4E7;
+  padding: 0;
+  text-align: center;
+  font-family: "Myriad Pro", serif;
+  position: relative;
+  margin: 0;
+  height: 100%;
+  -webkit-font-smoothing: antialiased;
+  color: white;
+}
+
+.wrapper {
+ height: 100% !important;
+ height: 100%;
+ margin: 0 auto; 
+ overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+h1, h2 {
+  width: 100%;
+  float: left;
+}
+h1 {
+  margin-top: 100px;
+  color: #000;
+  margin-bottom: 5px;
+  font-size: 70px;
+  letter-spacing: -4px;
+  font-weight: 100;
+}
+h1 span {
+  font-size: 26px;
+  margin: 0 5px;
+  text-transform: capitalize;
+  background: rgba(0,0,0,0.85);
+  display: inline-block;
+  color: #6D461D;
+  border-radius: 5px 5px;
+  -webkit-border-radius: 5px 5px;
+  -moz-border-radius: 5px 5px;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.75);
+  padding: 3px 10px;
+}
+h2 {
+  color: #6D461D;
+  font-weight: 100;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.pointer {
+  color: #9b59b6;
+  font-family: 'Pacifico', cursive;
+  font-size: 30px;
+  margin-top: 15px;
+}
+code {
+  margin: 20px 1%;
+  float: left;
+  width: 48%;
+  height: 105px;
+  background: rgba(0,0,0,0.1);
+  border: rgba(0,0,0,0.05) 5px solid;
+  border-radius: 5px;
+  padding:5px;
+  color: white;
+  text-align: center;
+  font-size: 15px;
+  margin-top: 25px;
+  display: block;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+code.html {
+  color: #7EC9E6;
+}
+code.js {
+  color: #FFAD00;
+}
+.main {
+  float: left;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.main h1 {
+  padding:150px 50px;
+  float: left;
+  width: 100%;
+  font-size: 45px;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  font-weight: 100;
+  color: white;
+  margin: 0;
+}
+
+.main h1.demo1 {
+  background: #1ABC9C;
+}
+
+.reload.bell {
+  font-size: 12px;
+  padding: 20px;
+  width: 45px;
+  text-align: center;
+  height: 47px;
+  border-radius: 50px;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+}
+
+.reload.bell #notification {
+  font-size: 25px;
+  line-height: 140%;
+}
+
+.reload, .btn{
+  display: inline-block;
+  border: 4px solid #A2261E;
+  border-radius: 5px;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  background-image: url(../img/layers.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  display: inline-block;
+  line-height: 100%;
+  padding: 0.7em;
+  text-decoration: none;
+  color: #fff;
+  width: 100px;
+  line-height: 140%;
+  font-size: 17px;
+  font-family: open sans;
+  font-weight: bold;
+}
+.reload:hover{
+  background: #444;
+}
+.btn {
+  width: 200px;
+  color: rgb(255, 255, 255);
+  border: 4px solid rgb(0, 0, 0);
+  background: rgba(3, 3, 3, 0.75);
+}
+.clear {
+  width: auto;
+}
+.btn:hover, .btn:hover {
+  background: #444;
+}
+.btns {
+  width: 410px;
+  margin: 50px auto;
+}
+.credit {
+  text-align: center;
+  color: rgba(0,0,0,0.5);
+  padding: 10px;
+  width: 410px;
+  clear: both;
+}
+.credit a {
+  color: rgba(0,0,0,0.85);
+  text-decoration: none;
+  font-weight: bold;
+  text-align: center;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+  display: block;
+  padding: 7px;
+  width: 100%;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  background: rgba(255, 255, 255, 0.25);
+  font-weight: bold;
+  font-size: 13px;
+  color: #000;
+  -webkit-transition: all 500ms ease-in-out;
+  -moz-transition: all 500ms ease-in-out;
+  -o-transition: all 500ms ease-in-out;
+  transition: all 500ms ease-in-out;
+}
+.back:hover {
+  color: black;
+  background: rgba(255, 255, 255, 0.5);
+}
+
+header {
+  position: relative;
+  z-index: 10;
+}
+.main section .page_container {
+  position: relative;
+  /*top: 25%;*/
+  margin: 0 auto 0;
+  max-width: 950px;
+  z-index: 3;
+}
+.main section  {
+  overflow: hidden;
+}
+
+.main section > img {
+  position: absolute;
+  max-width: 100%;
+  z-index: 1;
+}
+
+.main section.page1 {
+  background-image: url(../img/page1-back.png);
+  background-repeat: no-repeat;
+  background-position: top; 
+  background-size: 100% 100%;
+}
+.main section.page1 h1 {
+  text-align: left;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 70px;
+  color: black;
+}
+.main section.page1 h2 {
+  color: rgba(0,0,0,0.85);
+  text-align: center;
+  width: 435px;
+  line-height: 160%;
+}
+.main section .page_container .btns {
+  clear: both;
+  float: left;
+  text-align: center;
+  width: 435px;
+}
+.main section .page_container .btns a{
+  text-align: center;
+}
+.main section.page2 {
+  background-color: black;
+  background-image: url(../img/page2-back.png);
+  background-repeat: no-repeat;
+  background-attachment: bottom;
+  background-size: 100% 50%;
+  background-position: bottom;
+}
+.main section.page2 > img {
+  position: absolute;
+  top: -300px;
+  left: 50%;
+  margin-left: -1095px;
+}
+.main section.page2 .page_container {
+  margin-top: 240px;
+  overflow: hidden;
+}
+.main section.page2 h1 {
+  text-align: center;
+  padding: 0;
+  margin-bottom: 15px;
+  font-size: 50px;
+  letter-spacing: -1px;
+  color: white;
+}
+.main section.page2 h2 {
+  color: rgba(255,255,255,0.85);
+  text-align: center;
+  line-height: 160%;
+  font-weight: 100;
+}
+.viewing-page-2 .back{
+  background: rgba(0, 0, 0, 0.25);
+  color: #FFF;
+}
+.main section.page3 {
+  background-image: url(../img/page3-back.png);
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
+  /*background-position: bottom;*/
+}
+.main section.page3 .page_container {
+  overflow: hidden;
+  /*width: 500px;*/
+  /*right: -285px;*/
+  color: white;
+}
+
+.main section.page4 {
+  background-image: url(../img/page4-back.png);
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
+  /*background-position: bottom;*/
+}
+.main section.page5 {
+  background-image: url(../img/page5-back.png);
+  background-repeat: no-repeat;
+  background-attachment: cover;
+  background-size: 100% 100%;
+  /*background-position: bottom;*/
+}
+body.disabled-onepage-scroll .onepage-wrapper  section {
+  min-height: 100%;
+  height: auto;
+}
+
+body.disabled-onepage-scroll .main section .page_container, body.disabled-onepage-scroll .main section.page3 .page_container  {
+  padding: 20px;
+  margin-top: 150px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body.disabled-onepage-scroll  section .page_container h1{
+  text-align: center;
+  font-size: 50px;
+}
+body.disabled-onepage-scroll section .page_container h2, body.disabled-onepage-scroll section .page_container .credit, body.disabled-onepage-scroll section .page_container .btns{
+  text-align: center;
+  width: 100%;
+}
+
+body.disabled-onepage-scroll .main section.page1 > img {
+  position: absolute;
+  width: 80%;
+  left: 10%;
+}
+
+body.disabled-onepage-scroll .main section > img {
+  position: relative;
+  max-width: 80%;
+  bottom: 0;
+}
+body.disabled-onepage-scroll code {
+  width: 95%;
+  margin: 0 auto 25px;
+  float: none;
+  overflow: hidden;
+}
+
+body.disabled-onepage-scroll .main section.page3 .page_container {
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  right: 0;
+}
+
+
+ul.mr-auto, ul.mx-auto {
+  margin-left: auto;
+  margin-right: 10% !important;
+}
+nav.navbar {
+  font-family: "Myriad Pro", serif;
+  font-size: 0.8em !important;
+  height: 80px;
+  background-color: rgba(51,51,51, 0.3) !important;
+}
+nav.navbar1 {
+  top: 80px;
+  height: 30px;
+  background-color: rgba(0,0,0, 0.3) !important;
+ 
+  padding: 0;
+  margin: 0;
+  border-top: 1px rgb(0,153,153) solid;
+  border-bottom: 1px rgb(0,153,153) solid; 
+}
+div.col-4 .logo-header{
+  height: 80px;
+  line-height: 78px;
+}
+div.col-4 span {
+  color: rgb(153,153,0);
+  padding-left: 20px;
+  font-size: 1.8em;
+  display: inline-block !important;
+}
+div.col-4 span p {
+  color: rgb(0,102,204);
+  float: right;
+  /*padding-left: 10px;*/
+  margin: 0px;
+  border: none;
+  border-radius: none;
+  background-color: rgba(0,0,0,0);
+  padding: 0px 0px 0px 10px;
+}
+.col-4 span {
+  float: left;
+  display: inline-block;
+}
+.main section .page_container {
+  top: 110px;
+}
+.logo-header, .logo-header-nav {
+  font-family: "Myriad Pro", serif;
+  background-color: rgba(0,0,0, 0.6);
+  border-radius: 60px;
+  border: 1px rgb(0,153,153) solid;
+}
+.logo-header-nav {
+  max-width: 250px;
+  margin-left: 150px;
+  
+}
+#nav-header {
+  display: none;
+}
+.logo-header-nav span {
+  margin-top: 15px;
+
+}
+/*.logo-header img {
+  margin-right: 15px;
+}*/
+
+.layers {
+  height: 500px;
+  background-image: url(../img/layers.png);
+  background-repeat: no-repeat;
+  background-position: top; 
+  /*margin-top: 120px;*/
+  background-size: 100% 100%;
+  font-family: "Myriad Pro", serif;
+  background-attachment: cover;
+  bottom: -150px;
+}
+
+#future {
+  font-family: "Myriad Pro", serif;
+  /*margin-top: -40px;*/
+  color: white;
+  font-size: 4em;
+  display: block;
+}
+#bussines {
+  display: block;
+  color: white;
+  font-family: "Myriad Pro", serif;
+  font-size: 1.4em;
+}
+div.row  div.col span#learn {
+  bottom: 250px;
+  position: absolute;
+  color: white;
+}
+.main section.page2 .page_container {
+  margin-top: 0px;
+  top: 110px;
+  align-items: center;
+
+}
+#page2-content {
+  box-sizing: border-box;
+  display: block;
+  overflow: hidden;
+  border: 1px solid rgb(0,153,153);
+  border-radius: 50px;
+  padding: 20px;
+  margin: 20px;
+  color: white;
+}
+h2#page2-h2 {
+  font-family: "Myriad Pro", serif;
+  font-size: 2.5em;
+ /* width: 100%;
+  display: inline-block;*/
+/*  max-width: 200px;
+*//*  margin-left: 0 auto;
+  margin-right: 0 auto;*/
+  border: 1px solid rgb(0,153,153);
+  border-radius: 35px;
+  margin: 20px 0px 0px 0px;
+}
+
+.page3 div div .col-12 h2, 
+.page4 div div .col-12 h2,
+.page5 div div .col-12 h2 {
+  display: inline-block;
+  background-color: rgba(0,0,0, 0.5);
+  float: none;
+  color: white;
+  padding: 15px 0px 15px 0px;
+  border-radius: 30px;
+  border: 1px solid rgb(0,153,153);
+  margin-bottom: 10px;
+  margin-top: 20px;
+  max-width: 200px;
+} h5 {
+  background-color: red;
+}
+h4, h5, p {
+  background-color: rgba(0,0,0,0.5);
+  display: inline-block;
+  border-radius: 15px;
+  border: 1px solid rgb(0,153,153);
+  margin: 5px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.page5 div div div.col-12 h2 {
+  max-width: 300px;
+  padding: 10px;
+  margin: 10px;
+}
+p {
+  font-size: 0.8em;
+}
+.page3 div div div h2 {
+  font-size: 2.5em;
+}
+h4 {
+  font-size: 1em;
+}
